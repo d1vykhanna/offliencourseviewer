@@ -51,7 +51,7 @@ Offline Academy's scanner is built to handle exactly that mess — it recursivel
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/offline-academy.git
+git clone https://github.com/d1vykhanna/offline-academy.git
 cd offline-academy
 ```
 
