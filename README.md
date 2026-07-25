@@ -76,23 +76,7 @@ npm run dev
 ```
 This prints a local address — usually `http://localhost:5173`. Open it in your browser.
 
-> **Windows shortcut:** if you'd rather not juggle two terminals every time, save this as `start.bat` in the project root and just double-click it instead:
-> ```bat
-> @echo off
-> setlocal
-> set "ROOT=%~dp0"
-> if not exist "%ROOT%server\node_modules" (
->     pushd "%ROOT%server" && call npm install && popd
-> )
-> start "Backend" cmd /k "cd /d "%ROOT%server" && npm start"
-> timeout /t 5 /nobreak > nul
-> if not exist "%ROOT%client\node_modules" (
->     pushd "%ROOT%client" && call npm install && popd
-> )
-> start "Frontend" cmd /k "cd /d "%ROOT%client" && npm run dev"
-> timeout /t 4 /nobreak > nul
-> start "" "http://localhost:5173"
-> ```
+> **Windows shortcut:** if you'd rather not juggle two terminals every time, just double-click [`start-course-platform.bat`](start-course-platform.bat) in the project root instead. It installs dependencies on first run (skips that step on later runs), starts the backend and frontend in their own windows, and opens your browser automatically to `http://localhost:5173`.
 
 ### First-run setup
 
